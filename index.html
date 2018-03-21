@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Amazonian Marketplace</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <h1>Amazonian.net</h1>
+    <div class="container">
+      <form id="formId">
+        <label for="name">Name of Customer: </label>
+        <input id="name" type="text" required>
+        <label for="address"> Shipping Address: </label>
+        <input id="address" type="text" required>
+        <label for="address"> City: </label>
+          <input id="address" type="text" required>
+        <label for="address"> State: </label>
+          <input id="address" type="text" required>
+        <label for="department"> Department: </label>
+        <select class="form-control" id="item">
+          <option>Appliances</option>
+          <option>Electronics</option>
+          <option>Home Goods</option>
+          <option>Apparel</option>
+          <option>Groceries</option>
+          <option>Books</option>
+          <option>Outdoors</option>
+          <option>Cosmetics</option>
+          <option>Shoes</option>
+        </select>
+
+        <label for="item-ordered">Product ID Number: </label>
+          <input id="item-ordered" type="text" required>
+        <div class="form-group">
+          <label for="date-ordered">Date of Purchase: </label>
+          <input id="date-ordered" class="form-control" type="date">
+        </div>
+        <button class= "btn btn-success" id= "submitBtn"> Order to Amazonian!</button>
+      </form>
+
+      <!-- submit btn -->
+
+      <div>
+
+      </div>
+
+      <!-- begin receipt -->
+    <div class="container container-fluid" id="receipt">
+    <h1> Thank you for your order!</h1>
+    <h2> Thank you, <span class="name"></span> ! </h2>
+    <h2> Amazonian appreciates your order and we will process your order to be shipped within 5 business days. Please see below for a confirmation of your ordered items below on <span class="date-ordered"></span> . </h2>
+    <h2> Order Confirmation: </h2>
+    <div class="container-fluid">
+      <h3> Shipping Address: <span class= "address"></span> </h3>
+      <h3> Department: <span class="department"></span> </h3>
+      <h3> Item Ordered: <span class="item-ordered"></span>"</h3>
+    </div>
+    </div>
+    </div>
+  </body>
+</html>
